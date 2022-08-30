@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=gbk" />
+<link rel="icon" href="./images/icon.png">
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--- <title></title> --->
+<title>jemdoc + new design</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<div id="main-container">
+<div id="header-container">
+<div id="header">
+<div id="header-icon-text-container">
+<div id="header-text-container">
+<a href="index.html"><b>Chaoyi Zhao 赵朝熠</b></a>
+</div>
+</div>
+<div id="main">
+<button class="openbtn" onclick="openNav()"></button>
+</div>
+</div>
+</div>
+<div id="layout">
+<div id="layout-menu-container">
+<div id="layout-menu">
+<div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="talk.html">Talk</a></div>
+<div class="menu-item"><a href="work.html">Work</a></div>
+</div> <!-- <div id="layout-menu"> -->
+</div> <!-- <div id="layout-menu-container"> -->
+<div id="layout-content-container">
+<div id="layout-content">
+<div id="text-img-container"><div id="img-container">
+<img src="./images/CYZhao.jpg" alt="profile pic" width="300px" height="200px" /></div>
+<div id="text-container"><h1>Chaoyi Zhao 赵朝熠 <br /></h1>
+<h3>Ph.D. Student <br /></h3>
+<p><a href="https://www.math.pku.edu.cn/finance/" target=&ldquo;blank&rdquo;>Department of Financial Mathematics</a><br />
+<a href="https://www.math.pku.edu.cn/" target=&ldquo;blank&rdquo;>School of Mathematical Sciences</a><br />
+<a href="https://www.pku.edu.cn/" target=&ldquo;blank&rdquo;>Peking University</a> <br /> 
+zhaochaoyi [at] pku [dot] edu [dot] cn <br />
+No. 21 Building, Peking University, 5 Yiheyuan Road, Beijing, China, 100871</p>
+</div></div>
+<h2>Education</h2>
+<ul>
+<li><p><b>B.S. in Mathematics and Applied Mathematics</b>, School of Mathematical Sciences, Peking University, 2015-2019</p>
+<ul>
+<li><p><a href="https://dics.pku.edu.cn/en/education/theeliteundergraduateprogram/index.htm" target=&ldquo;blank&rdquo;>Elite Undergraduate Program of Applied Mathematics</a>, 2017-2019</p>
+</li></ul>
+</li>
+<li><p><b>B.S. (Double Degree) in Computer Science and Technology</b>, School of Electronics Engineering and Computer Science, Peking University, 2016-2019</p>
+</li>
+<li><p><b>Ph.D. Candidate in Statistics</b>, School of Mathematical Sciences, Peking University, 2019-now</p>
+<ul>
+<li><p>Supervised by Prof. <a href="http://english.math.pku.edu.cn/peoplefaculty/14.html" target=&ldquo;blank&rdquo;>Lan Wu</a></p>
+</li>
+</ul>
+
+</li>
+</ul>
+<h2>Research Interests</h2>
+<ul>
+<li><p><b>Investments</b></p>
+<ul>
+<li><p>Factor investing</p>
+</li>
+<li><p>High-frequency investing/trading</p>
+</li>
+<li><p>Sustainable investing</p>
+</li></ul>
+</li>
+<li><p><b>Statistics</b></p>
+<ul>
+<li><p>High-dimensional statistics</p>
+</li>
+<li><p>Machine learning &amp; deep learning</p>
+</li></ul>
+</li>
+<li><p><b>Actuarial Sciences</b></p>
+</li>
+</ul>
+<p>Don't hesitate to drop me an email if you are interested in cooperating with me! :-)</p>
+</div> <!-- <div id="layout-content"> -->
+<div id="footer-container">
+<div id="footer">
+<div id="footer-text">
+Last edited  on August 30<sup>th</sup> 2022  10:52PM (Time Zone: 中国标准时间). </br>
+Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="blank">jemdoc + new design</a>. My <a href="http://scholar.pku.edu.cn/zhaochaoyi" target="blank">old homepage</a> (in Chinese).
+</div> <!-- <div id="footer-text"> -->
+</div> <!-- <div id="footer"> -->
+</div> <!-- <div id="footer-container"> -->
+</div> <!-- <div id="layout-content-container"> -->
+</div> <!--- <div id="layout"> --->
+</div> <!--- <div id="main-container"> --->
+<script>
+function openNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "280px";
+        document.getElementById("layout-content-container").style.marginLeft = "280.8px";
+        document.getElementById("layout-content-container").style.position = "fixed";
+    }
+}
+function closeNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "0";
+        document.getElementById("layout-content-container").style.position = "static";
+        document.getElementById("layout-content-container").style.marginLeft = "0px";
+        setInterval(
+            function(){ location.reload() },
+            500
+        );
+    }
+}
+</script>
+</body>
+</html>

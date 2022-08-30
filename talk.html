@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=gbk" />
+<link rel="icon" href="./images/icon.png">
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--- <title></title> --->
+<title>jemdoc + new design</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<div id="main-container">
+<div id="header-container">
+<div id="header">
+<div id="header-icon-text-container">
+<div id="header-text-container">
+<a href="index.html"><b>Chaoyi Zhao 赵朝熠</b></a>
+</div>
+</div>
+<div id="main">
+<button class="openbtn" onclick="openNav()"></button>
+</div>
+</div>
+</div>
+<div id="layout">
+<div id="layout-menu-container">
+<div id="layout-menu">
+<div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="talk.html" class="current">Talk</a></div>
+<div class="menu-item"><a href="work.html">Work</a></div>
+</div> <!-- <div id="layout-menu"> -->
+</div> <!-- <div id="layout-menu-container"> -->
+<div id="layout-content-container">
+<div id="layout-content">
+<h2>Talks</h2>
+<ul>
+<li><p><b>High-Frequency Liquidity in the Chinese Stock Market: Measurements, Patterns, and Determinants</b> <br /> </p>
+<ul>
+<li><p><i>2022 INFORMS Annual Meeting</i>, October 17, 2022, Forthcoming. <br /> 
+Speaker of the <i>FinTech</i> Session.  <a href="https://meetings.informs.org/wordpress/indianapolis2022/" target=&ldquo;blank&rdquo;>Link</a>.</p>
+</li>
+<li><p><i>11th World Congress of Bachelier Finance Society</i>, June 15, 2022. <br /> 
+Session chair and speaker of the <i>Market Microstructure II</i> Session.  <a href="http://www.bacheliercongress.com/2022/~bfs2020/" target=&ldquo;blank&rdquo;>Link</a>.</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p><b>Construct Smith-Wilson Interest Rate Curves with Endogenous Ultimate Forward Rates</b> <br /> 
+<i>United As One: 24th International Congress on Insurance: Mathematics and Economics</i>, June 5, 2021. <br /> 
+Speaker of the <i>Quantitative Finance</i> session.  <a href="https://publish.illinois.edu/ime-conf-2021a/" target=&ldquo;blank&rdquo;>Link</a>.</p>
+</li>
+</ul>
+<ul>
+<li><p><b>深交所A股市场高频数据统计特征实证研究 (Statistical Patterns of High-Frequency Data for A-share stocks in Shenzhen Stock Exchange)</b> <br /> 
+第三届金融工程与风险管理青年学者研讨会, Shandong University of Finance and Economics, June 12, 2021. <br /> 
+Invited talk. <a href="https://shuxue.sdufe.edu.cn/info/1053/2260.htm" target=&ldquo;blank&rdquo;>Link</a>.</p>
+</li>
+</ul>
+<ul>
+<li><p><b>在数学科学学院2018年开学典礼上的发言 (Speech for the Opening Ceremony of School of Mathematical Sciences, 2018)</b> <br /> 
+Opening Ceremony, School of Mathematical Sciences, Peking University, September 15, 2018. <br /> 
+Representative of seniors. <a href="https://www.math.pku.edu.cn/xsyd/yyjh/2018/114184.htm" target=&ldquo;blank&rdquo;>Link</a>.</p>
+</li>
+</ul>
+</div> <!-- <div id="layout-content"> -->
+<div id="footer-container">
+<div id="footer">
+<div id="footer-text">
+Last edited  on August 30<sup>th</sup> 2022  10:52PM (Time Zone: 中国标准时间). </br>
+Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="blank">jemdoc + new design</a>. My <a href="http://scholar.pku.edu.cn/zhaochaoyi" target="blank">old homepage</a> (in Chinese).
+</div> <!-- <div id="footer-text"> -->
+</div> <!-- <div id="footer"> -->
+</div> <!-- <div id="footer-container"> -->
+</div> <!-- <div id="layout-content-container"> -->
+</div> <!--- <div id="layout"> --->
+</div> <!--- <div id="main-container"> --->
+<script>
+function openNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "280px";
+        document.getElementById("layout-content-container").style.marginLeft = "280.8px";
+        document.getElementById("layout-content-container").style.position = "fixed";
+    }
+}
+function closeNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "0";
+        document.getElementById("layout-content-container").style.position = "static";
+        document.getElementById("layout-content-container").style.marginLeft = "0px";
+        setInterval(
+            function(){ location.reload() },
+            500
+        );
+    }
+}
+</script>
+</body>
+</html>
