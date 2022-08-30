@@ -8,7 +8,7 @@
 <link rel="icon" href="./images/icon.png">
 <link rel="stylesheet" href="main.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<!--- <title></title> --->
+<!--- <title>jemdoc &ndash; example page</title> --->
 <title>jemdoc + new design</title>
 <!-- MathJax -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
@@ -41,7 +41,7 @@ MathJax.Hub.Config({
 <div id="layout-menu-container">
 <div id="layout-menu">
 <div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
-<div class="menu-item"><a href="index.html" class="current">About</a></div>
+<div class="menu-item"><a href="index.html">About</a></div>
 <div class="menu-category">My Templates</div>
 <div class="menu-item"><a href="profile.html">Profile&nbsp;Page</a></div>
 <div class="menu-item"><a href="post1.html">Blog&nbsp;Post&nbsp;Page</a></div>
@@ -53,7 +53,7 @@ MathJax.Hub.Config({
 <div class="menu-item"><a href="contact.html">contact</a></div>
 <div class="menu-category">User's guide</div>
 <div class="menu-item"><a href="using.html">running&nbsp;jemdoc</a></div>
-<div class="menu-item"><a href="example.html">example&nbsp;page</a></div>
+<div class="menu-item"><a href="example.html" class="current">example&nbsp;page</a></div>
 <div class="menu-item"><a href="nomenu.html">example&nbsp;page&nbsp;(no&nbsp;menu)</a></div>
 <div class="menu-item"><a href="cheatsheet.html">cheat&nbsp;sheet</a></div>
 <div class="menu-item"><a href="extra.html">extra&nbsp;syntax</a></div>
@@ -74,17 +74,68 @@ MathJax.Hub.Config({
 </div> <!-- <div id="layout-menu-container"> -->
 <div id="layout-content-container">
 <div id="layout-content">
-<div id="text-img-container"><div id="img-container">
-<a href="https://github.com/szl2/jemdoc-new-design"><img src="./images/banner.png" alt="profile pic" width="100%" /></a></div>
-<div id="text-container"></div></div>
-<div id="text-img-container"><div id="img-container">
-<img src="./images/info.png" alt="info pic" width="100%" /></div>
-<div id="text-container"></div></div>
+<div id="toptitle">
+<h1>jemdoc &ndash; example page</h1>
+<div id="subtitle"><a href="https://jemnz.com/" target=&ldquo;blank&rdquo;>Jacob Mattingley</a> (<a href="mailto:www@jemnz.com" target=&ldquo;blank&rdquo;>www@jemnz.com</a>)</div>
+</div>
+<p>If the first line of the file starts with <tt># jemdoc</tt>, special functions like <a href="menu.html" target=&ldquo;blank&rdquo;>menus</a> will be used.</p>
+<h2>Example</h2>
+<p>Here are some <b>text</b> <i>features</i>. I could <a href="http://cvxmod.net/" target=&ldquo;blank&rdquo;>link somewhere</a> or insert a raw link to another page like <a href="download.html" target=&ldquo;blank&rdquo;>download.html</a>. I could use <tt>monospace</tt>, too.</p>
+<p>I could write special characters like #, $ and + by just using a backslash (\) in front of those characters. Or automatically detect an <a href="mailto:www@jemnz.com" target=&ldquo;blank&rdquo;>email address</a>.</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>Save the file as <tt>index.jemdoc</tt>, say, and simply call <tt>jemdoc index</tt> (after <a href="download.html" target=&ldquo;blank&rdquo;>downloading jemdoc</a>, of course).</p>
+</div></div>
+<h2>Next bit, next heading level two</h2>
+<h3>Getting into level three now</h3>
+<p>Why not use a list</p>
+<ul>
+<li><p>to explain the way you do lists?</p>
+</li>
+<li><p>to demonstrate how a line<br /> break might work?</p>
+</li>
+</ul>
+<p>Or perhaps a</p>
+<ol>
+<li><p>Multilevel</p>
+<ol>
+<li><p>Numbered list</p>
+</li>
+<li><p>Is more</p>
+</li></ol>
+</li>
+<li><p>Useful?</p>
+</li>
+</ol>
+<dl>
+<dt>Definition</dt>
+<dd><p>lists, especially when there are many definitions</p></dd>
+<dt>Can be useful</dt>
+<dd><p>for explaining things</p></dd>
+</dl>
+<h2>Finally, a few more blocks</h2>
+<p>This &lsquo;section&rsquo; features &ldquo;smart quotes&rdquo;.</p>
+<div class="infoblock">
+<div class="blocktitle">Simple block</div>
+<div class="blockcontent">
+<p>This is a simple text block, with a title. Notice how the previous line has only one set of braces ({}).</p>
+</div></div>
+<div class="codeblock">
+<div class="blocktitle">Interactive Python listing</div>
+<div class="blockcontent"><pre>
+<span class="pycommand">&gt;&gt;&gt; print 'Interactive Python code.'</span>
+'Interactive Python code.'
+</pre></div></div>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+Plain code block with no title.
+</pre></div></div>
+<p>You might need 2&ndash;3 different-sized dashes&#8201;&mdash;&#8201;they can be useful. Now we're done!</p>
 </div> <!-- <div id="layout-content"> -->
 <div id="footer-container">
 <div id="footer">
 <div id="footer-text">
-Last edited  on August 30<sup>th</sup> 2022  12:54AM (Time Zone: 中国标准时间). </br>
+Last edited  on August 30<sup>th</sup> 2022  12:55AM (Time Zone: 中国标准时间). </br>
 Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="blank">jemdoc + new design</a>.
 </div> <!-- <div id="footer-text"> -->
 </div> <!-- <div id="footer"> -->
